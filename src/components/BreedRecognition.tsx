@@ -19,7 +19,7 @@ const BreedRecognition = () => {
   const [isDragOver, setIsDragOver] = useState(false);
   const { toast } = useToast();
 
-  const API_URL = 'http://127.0.0.1:5000/predict';
+  const API_URL = 'https://breed-recognition.vercel.app//predict';
 
   const handleFileSelect = useCallback((file: File) => {
     if (!file.type.startsWith('image/')) {
